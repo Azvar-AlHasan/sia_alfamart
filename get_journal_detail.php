@@ -1,15 +1,14 @@
 <?php
 include 'koneksi.php';
-
 header('Content-Type: application/json');
 
 if(isset($_GET['id'])) {
     $id = $_GET['id'];
     
-    // Ambil Data Header
+    // 1. Ambil Header Transaksi
     $header = $conn->query("SELECT * FROM journal_entries WHERE id = '$id'")->fetch_assoc();
     
-    // Ambil Data Detail Items
+    // 2. Ambil Detail Item Transaksi (Join dengan Nama Akun)
     $items = [];
     $sql_items = "SELECT i.*, c.name as account_name 
                   FROM journal_items i 
@@ -21,6 +20,7 @@ if(isset($_GET['id'])) {
         $items[] = $row;
     }
     
+    // Kirim data JSON ke Javascript
     echo json_encode(['header' => $header, 'items' => $items]);
 }
 ?>

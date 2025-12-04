@@ -29,6 +29,11 @@
             <span class="font-medium">Buku Besar</span>
         </a>
 
+        <a href="cash_flow.php" class="flex items-center px-4 py-3 rounded-lg transition-all duration-200 <?php echo (basename($_SERVER['PHP_SELF']) == 'cash_flow.php') ? 'bg-blue-600 text-white shadow-lg shadow-blue-900/50' : 'text-gray-400 hover:bg-gray-800 hover:text-white'; ?>">
+    <span class="text-lg mr-3">🌊</span> 
+    <span class="font-medium">Arus Kas</span>
+        </a>
+
         <div class="pt-6">
             <p class="text-xs text-gray-500 uppercase font-bold pl-3 mb-2 tracking-wider">Laporan</p>
             <a href="profit_loss.php" class="flex items-center px-4 py-3 rounded-lg transition-all duration-200 <?php echo (basename($_SERVER['PHP_SELF']) == 'profit_loss.php') ? 'bg-blue-600 text-white shadow-lg shadow-blue-900/50' : 'text-gray-400 hover:bg-gray-800 hover:text-white'; ?>">
