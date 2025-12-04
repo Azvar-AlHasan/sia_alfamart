@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "db_alfamart";
+$servername = "sql100.infinityfree.com";
+$username = "if0_40594372";
+$password = "xlCPLDKkokws3B";
+$dbname = "if0_40594372_db_alfa";
 
 // Aktifkan pelaporan error driver database
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
