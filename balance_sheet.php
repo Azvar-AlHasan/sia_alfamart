@@ -121,9 +121,12 @@ if(!$is_balanced) {
                     </span>
                 <?php endif; ?>
                 
-                <button onclick="window.print()" class="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg text-sm border border-gray-700 transition">
-                    🖨️ Cetak
-                </button>
+                <a href="export_excel.php?laporan=neraca" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-bold flex items-center transition">
+                     <span class="mr-2">📊</span> Excel
+                 </a>
+                <a href="export_pdf.php?laporan=neraca" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-bold flex items-center transition">
+                    <span class="mr-2">📄</span> PDF
+                </a>
             </div>
         </header>
 

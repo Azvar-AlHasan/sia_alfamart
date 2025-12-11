@@ -35,11 +35,16 @@ $laba_bersih = $total_rev - $total_exp;
 
     <div class="md:ml-64 min-h-screen flex flex-col transition-all duration-300">
         <header class="h-20 bg-[#1e1e2d] border-b border-gray-800 flex items-center justify-between px-8 sticky top-0 z-40">
-            <h2 class="text-2xl font-bold text-white">Laporan Laba Rugi (Real-time)</h2>
-            <div class="text-xs font-mono bg-gray-800 px-3 py-1 rounded text-gray-400">
-                Data Per: <?php echo date('d M Y H:i'); ?>
-            </div>
-        </header>
+    <h2 class="text-2xl font-bold text-white">Laporan Laba Rugi</h2>
+    <div class="flex gap-3">
+        <a href="export_excel.php?laporan=labarugi" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-bold flex items-center transition shadow-lg">
+            <span class="mr-2">📊</span> Excel
+        </a>
+        <a href="export_pdf.php" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-bold flex items-center transition shadow-lg">
+            <span class="mr-2">📄</span> PDF
+        </a>
+    </div>
+    </header>
 
         <main class="p-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
